@@ -5,7 +5,7 @@ These assignments demonstrate **basic syntax**, **input/output handling**, and *
 
 ---
 
-## 📘 Assignment 1 – Basic Output Program
+## Assignment 1 – Basic Output Program
 
 ### Description
 A simple console application that introduces Java syntax, structure, and basic output using the `System.out.println()` method.  
@@ -30,7 +30,7 @@ This program prints personal introduction details to the console.
 
 ---
 
-## 📗 Assignment 2 – Arithmetic and Input Program
+## Assignment 2 – Arithmetic and Input Program
 
 ### Description
 A Java console program that accepts user input, performs arithmetic calculations, and displays formatted results.  
@@ -53,7 +53,7 @@ This assignment expands on the first by introducing **variables**, **data types*
 
 ---
 
-## 🧩 Program Structure
+## Program Structure
 
 Each file includes:
 - Header comment with author name, date, and description.
@@ -63,7 +63,7 @@ Each file includes:
 
 ---
 
-## ⚙️ How to Compile and Run
+## How to Compile and Run
 
 ### Requirements
 - Java Development Kit (JDK) 17 or newer  
