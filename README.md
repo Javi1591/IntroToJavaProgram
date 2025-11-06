@@ -1,79 +1,78 @@
-# Java Assignments 1 & 2 – Introduction to Java Programming
+# COP2251 – Java Assignment 1: AboutMe
 
-A collection of two introductory Java programs designed for foundational coursework in computer programming.  
-These assignments demonstrate **basic syntax**, **input/output handling**, and **arithmetic operations** in Java.
+A simple introductory Java console application that outputs formatted personal information and demonstrates arithmetic evaluation.  
+This was the first assignment of the course and focuses on program structure, syntax, and console output.
 
----
+## File Structure
+nazario1and2/
+└── nazario1/
+    └── AboutMe.java
 
-## Assignment 1 – Basic Output Program
+## Source Code Summary
+File: AboutMe.java  
+Package: nazario1  
+Class: AboutMe  
+Entry Point: public static void main(String[] args)  
+The program prints four lines of information to the console:
+1. The programmer’s full name.
+2. Their favorite TV show.
+3. Their high school and city.
+4. The evaluated result of a numeric expression.
 
-### Description
-A simple console application that introduces Java syntax, structure, and basic output using the `System.out.println()` method.  
-This program prints personal introduction details to the console.
+## Code Overview
+// Nazario, Xavier  
+// AboutMe.java  
+// January 6, 2025 ©  
+// Description: Program prints my name, favorite TV show, and my high school/city.  
+// Also performs a mathematical operation and displays the result.
 
-### Features
-- Demonstrates proper Java program structure:
-  - Class declaration
-  - `main()` method
-  - Output statements
-- Uses `System.out.println()` to print multiple lines of text.
-- Follows consistent code indentation and commenting conventions.
+package nazario1;
 
-### Learning Objectives
-- Understand the structure of a Java application.
-- Practice writing and compiling your first Java program.
-- Reinforce use of the `println()` statement for formatted console output.
+public class AboutMe
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Name: Xavier Nazario");
+        System.out.println("Favorite TV Show: The Office");
+        System.out.println("High School and City: Coral Reef Senior High, Miami, FL");
 
-### Files
-- `Nazario_Assignment1.java` (example filename)  
-  Contains the complete implementation of Assignment 1.
+        double answer = (12.5 + 5.5 / 3) / (6.25 * 6 - 5.0);
+        System.out.println("Result of expression (12.5 + 5.5 / 3) / (6.25 * 6 - 5.0) = " + answer);
+    }
+}
 
----
+## Program Behavior
+When executed, the program displays formatted output describing the author and prints the evaluated mathematical expression.
 
-## Assignment 2 – Arithmetic and Input Program
+Example Console Output:
+Name: Xavier Nazario  
+Favorite TV Show: The Office  
+High School and City: Coral Reef Senior High, Miami, FL  
+Result of expression (12.5 + 5.5 / 3) / (6.25 * 6 - 5.0) = 0.38253968253968255
 
-### Description
-A Java console program that accepts user input, performs arithmetic calculations, and displays formatted results.  
-This assignment expands on the first by introducing **variables**, **data types**, and **user interaction**.
-
-### Features
-- Utilizes the `Scanner` class for user input.
-- Performs arithmetic operations such as addition, subtraction, multiplication, or division.
-- Displays formatted results using string concatenation or `printf()`.
-- Demonstrates numeric variables (`int`, `double`) and basic type casting.
-
-### Learning Objectives
-- Practice reading and processing user input.
-- Apply arithmetic and variable manipulation.
-- Reinforce formatted output and precision handling.
-
-### Files
-- `Nazario_Assignment2.java` (example filename)  
-  Complete source code implementing Assignment 2.
-
----
-
-## Program Structure
-
-Each file includes:
-- Header comment with author name, date, and description.
-- Import statements (for `java.util.Scanner` when applicable).
-- A single public class matching the filename.
-- A `main()` method for execution and testing.
-
----
+## Key Concepts Demonstrated
+- Basic Program Structure: package, class, and main() method.  
+- Console Output: Using System.out.println() to print text to the console.  
+- Arithmetic Expressions: Demonstrates operator precedence and evaluation of a double expression.  
+- Comments and Documentation: Proper use of header comments, descriptive inline notes, and consistent formatting.  
+- Naming Conventions: Follows standard Java capitalization and file/class naming conventions.
 
 ## How to Compile and Run
+Requirements:  
+- Java Development Kit (JDK) 17 or later  
+- Command line terminal or IDE (such as IntelliJ IDEA, Eclipse, or VS Code)
 
-### Requirements
-- Java Development Kit (JDK) 17 or newer  
-  (any recent version works)
+Commands:
+javac nazario1/AboutMe.java  
+java nazario1.AboutMe
 
-### Command Line Instructions
-To compile and run either program:
-```bash
-javac Nazario_Assignment1.java
-java Nazario_Assignment1
+## Expected Output
+The program will print the lines exactly as shown in the example, followed by the numeric result of the expression.
 
-javac Nazario_Assignment2.java
-java Nazario_Assignment2
+## Author
+Xavier Nazario © 2025  
+Course: COP2251 – Java Programming  
+GitHub: @Javi1591
+
+## License
+This project is licensed under the MIT License — see the LICENSE file for details.
